@@ -1,0 +1,158 @@
+---
+title: "QMM Assignment"
+output:
+  word_document: default
+  html_document: default
+  pdf_document: default
+date: "2023-09-10"
+---
+
+```{r setup, include=TRUE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+**Quantitative Management Modeling**
+**ASSIGNMENT-1**
+
+Name:Sandhya vani sadineni
+
+KSU ID:811297815
+
+
+Question 1:
+
+**a. Clearly define the decision variables. **
+
+The decision variables are the numbers of collegiate(b_c) and Mini bags pack(b_m) that are generated every week.
+
+Suppose the total profit is$$t_p$$
+Suppose the number of collegiate back packs is$$b_c$$
+Suppose the number of mini back packs is$$b_m$$
+
+
+
+**b. What is the objective function?**
+
+The objective function is to maximize profit.collegiate back packs generate a profit of '$32'
+and mini back packs generate a profit of '$24'.
+
+Maximized Profit is$$m_p$$
+
+$$m_p=32b_c+24b_m$$
+
+
+**c. What are the constraints?**
+
+Material Constraints: Back savers receive a nylon fabric of 5,000 Sq.ft and 
+3sq.ft nylon fabric needed for  collegiate back packs and 2Sq.Ft needed for mini back packs.
+
+$$ 3b_c+2b_m\le5000$$
+ 
+Time constraint: 35 Employees works 40 hours a week.
+Collegite bags require 45 minutes of labour to generate profit of $32 and mini back packs need 40 minutes to earn profit of
+$25.
+$$ 45b_c+40b_m\le35 $$employees*40hours*60 minutes
+
+Non-Negativity:
+
+ $$0\le b_c\le1000$$
+ $$0\le b_m\le1200$$
+ 
+**d. Write down the full mathematical formulation for this LP problem.**
+
+Number of collegiate backpacks per week:
+$$b_c$$ 
+
+Number of Mini backpacks per week:
+$$b_m$$
+
+Maximized profit
+$$m_p=32b_c+24b_m$$
+
+Subject to
+collegiate backpacks sold per week:
+$$b_c\le 1000$$
+mini backpacks sold per week:
+$$b_m\le 1200$$
+
+minutes per week: (35 employees*40 hours*60 minutes)
+$$45b_c+40b_m\le84000$$
+Material required per week:
+$$3b_c+2b_m\le5000sq.ft$$ 
+
+
+Question 2:
+
+**A. Define the decision variables.**
+
+The number of units of the new product, regardless of size, that should be produced
+on each plant to maximize the profit of the Weigelt corporation.
+
+Note:
+X= number of units produced on each plant,
+
+i.e., i = 1 (Plant 1), 2 (Plant 2), 3 (Plant 3).
+L, M and S = Product’s Size
+
+Where L = large, M = medium, S = small.
+
+Decision Variables:
+
+Number of Large sized items produced on plant 1
+$$XL_1$$ 
+
+Number of Medium sized items produced on plant 2
+$$XM_2$$
+
+Number of Small sized items produced on plant 3
+$$XS_3$$
+
+
+**B. Formulate a Linear Programming for this Problem:**
+
+Number of Large sized items produced on plant i
+
+$$XL_i$$
+Number of Medium sized items produced on plant i
+$$XM_i$$
+Number of Small sized items produced on plant i
+$$XS_i$$
+Where i = 1 (Plant 1), 2 (Plant 2), 3 (Plant 3).
+
+Maximized Profit:
+z=maximized profit
+
+$$Z =420 (XL_1 + XL_2 + XL_3) + 360 (XM_1 + XM_2 + XM_3) +300 (XS_1 + XS_2 + XS_3)$$
+
+Constraints:
+
+Total number of size’s units produced regardless the plant:
+ $$L=XL_1 + XL_2 + XL_3$$
+$$M = XM_1 + XM_2 + XM_3$$
+$$S = XS_1 + XS_2 + XS_3$$
+Production Capacity per unit by plant each day
+i.e.,
+$$Plant 1 = XL_1 + XM_1 + XS_1 ≤ 750$$
+$$Plant 2 = XL_2 + XM_2 + XS_2 ≤ 900$$
+$$Plant 3 = XL_3 + XM_3+ XS_3 ≤ 450$$
+
+
+Storage capacity per unit by plant each day:
+
+$$Plant 1 = 20XL_1 + 15XM_1 + 12XS_1 ≤ 13000$$
+$$Plant 2 = 20XL_2 + 15XM_2 + 12XS_2 ≤ 12000$$
+$$Plant 3 = 20XL_3 + 15XM_3 + 12XS_3 ≤ 5000$$
+Sales forecast per day:
+$$L = XL_1 + XL_2 + XL_3 ≤ 900$$
+$$M = XM_1 + XM_2 + XM_3 ≤ 1200$$
+$$S = XS_1 + XS_2 + XS_3 ≤ 750$$
+The Plants always utilize the same % of their excess capacity to produce the new
+product.
+$$XL_1 + XM_1 + XS_1/750 = XL_2 + XM_2 + XS_2/900 = XL_3 + XM_3 + XS_3/450$$
+It can be denoted as:
+a)$$ 900 (XL_1 + XM_1 + XS_1) – 750 (XL_2 + XM_2 + XS_2) = 0$$
+b) $$450 (XL_2 + XM_2 + XS_2) – 900 (XL_3 + XM_3 + XS_3) = 0$$
+c) $$450 (XL_1 + XM_1 + XS_1) – 750 (XL_3 + XM_3 + XS_3) = 0$$
+
+All Values must be greater or equal to zero
+L, M and S ≥ 0
+$$XL_i, XM_i, XS_i ≥ 0$$
